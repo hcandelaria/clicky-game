@@ -7,7 +7,7 @@ const Card = (props) => (
     <div className="col s12 m4">
       <div className="card">
         <div className="card-image">
-          <img src="./img/003.png" alt='pokemon'></img>
+          <a href="#!"><img src={props.img} alt={props.name}/></a>
         </div>
       </div>
     </div>

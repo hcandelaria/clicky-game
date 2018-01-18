@@ -1,92 +1,92 @@
 [
   {
     "id" : 0 ,
-    "name" : "",
+    "name" : "Venusaur",
     "img" : "./img/003.png"
   },
   {
     "id" : 1 ,
-    "name" : "",
+    "name" : "Charizard",
     "img" : "./img/006.png"
   },
   {
     "id" : 2 ,
-    "name" : "",
+    "name" : "Blastoise",
     "img" : "./img/009.png"
   },
   {
     "id" : 3 ,
-    "name" : "",
+    "name" : "Butterfree",
     "img" : "./img/012.png"
   },
   {
     "id" : 4 ,
-    "name" : "",
+    "name" : "Beedrill",
     "img" : "./img/015.png"
   },
   {
     "id" : 5 ,
-    "name" : "",
+    "name" : "Pidgeot",
     "img" : "./img/018.png"
   },
   {
     "id" : 6 ,
-    "name" : "",
+    "name" : "Raticate",
     "img" : "./img/020.png"
   },
   {
     "id" : 7 ,
-    "name" : "",
+    "name" : "Fearow",
     "img" : "./img/022.png"
   },
   {
     "id" : 8 ,
-    "name" : "",
+    "name" : "Arbok",
     "img" : "./img/024.png"
   },
   {
     "id" : 9 ,
-    "name" : "",
+    "name" : "Pikachu",
     "img" : "./img/025.png"
   },
   {
     "id" : 10 ,
-    "name" : "",
+    "name" : "Lapras",
     "img" : "./img/131.png"
   },
   {
     "id" : 11 ,
-    "name" : "",
+    "name" : "Snorlax",
     "img" : "./img/143.png"
   },
   {
     "id" : 12 ,
-    "name" : "",
+    "name" : "Articuno",
     "img" : "./img/144.png"
   },
   {
     "id" : 13 ,
-    "name" : "",
+    "name" : "Zapdos",
     "img" : "./img/145.png"
   },
   {
     "id" : 14 ,
-    "name" : "",
+    "name" : "Moltres",
     "img" : "./img/146.png"
   },
   {
     "id" : 15 ,
-    "name" : "",
+    "name" : "Dragonite",
     "img" : "./img/149.png"
   },
   {
     "id" : 16 ,
-    "name" : "",
+    "name" : "Mewtwo",
     "img" : "./img/150.png"
   },
   {
     "id" : 17,
-    "name" : "",
+    "name" : "Mew",
     "img" : "./img/151.png"
   }
 ]
