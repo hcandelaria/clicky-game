@@ -12,7 +12,6 @@ const Card = (props) => (
       </div>
     </div>
   </div>
-
 );
 
 //Export Card
