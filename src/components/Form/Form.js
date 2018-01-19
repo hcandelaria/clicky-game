@@ -27,11 +27,14 @@ class Form extends Component {
   //
   catchPokemon = e =>{
     e.preventDefault();
-    if(this.state.pokemonsCathed.includes(e.key)){
+    if(this.state.pokemonsCathed.includes(e.target.id)){
       console.log("lost");
     }else{
-      this.state.pokemonsCathed.push(e.key);
+      console.log(e.target.id);
+      this.state.pokemonsCathed.push(e.target.id);
       this.props.updateCaughtCount();
+      this.findPokemon();
+      // this.forceUpdate();
     }
   }
   render(){
@@ -45,6 +48,7 @@ class Form extends Component {
                   <Card
                     catchPokemon={this.catchPokemon}
                     key={pokemon.id}
+                    id={pokemon.id}
                     img={pokemon.img}
                     name={pokemon.name}
                   />

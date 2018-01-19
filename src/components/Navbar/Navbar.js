@@ -8,7 +8,7 @@ const Navbar = (props) => (
     <div className="nav-wrapper">
       <a href="#!" className="brand-logo">Pokemon</a>
       <ul className="right">
-        <li id="catch">Caught: {props.caughtCount}</li>
+        <li id="caughtCount">Caught: {props.caughtCount}</li>
       </ul>
     </div>
   </nav>
