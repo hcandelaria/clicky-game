@@ -6,12 +6,17 @@ import Form from './components/Form';
 
 
 class App extends Component {
-
+  state = {
+    caughtCount: 0
+  };
+  updateCaughtCount=()=>{
+    this.setState({ caughtCount: this.state.caughtCount + 1});
+  }
   render(){
     return (
       <section>
-        <Navbar />
-        <Form/>
+        <Navbar caughtCount={this.state.caughtCount} />
+        <Form updateCaughtCount={this.updateCaughtCount}/>
       </section>
     );
   }

@@ -7,7 +7,12 @@ const Card = (props) => (
     <div className="col s12 m4">
       <div className="card">
         <div className="card-image">
-          <a href="#!"><img src={props.img} alt={props.name}/></a>
+          <a href="#!"
+            onClick={props.catchPokemon}
+            id={props.id}><img
+            src={props.img}
+            alt={props.name}/>
+          </a>
         </div>
       </div>
     </div>
