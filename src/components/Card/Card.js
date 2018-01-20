@@ -10,9 +10,17 @@ const Card = (props) => (
           <a href="#!"
             onClick={props.catchPokemon}>
             <img
+              className='pokemon'
+              style={{opacity: 1}}
               id={props.id}
               src={props.img}
-              alt={props.name}/>
+              alt={props.name}
+            />
+            <img
+              className='pokeball hide'
+              alt="pokeball"
+              src='https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG'
+            />
           </a>
         </div>
       </div>

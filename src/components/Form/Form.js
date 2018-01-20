@@ -1,6 +1,7 @@
 //Import packages
 import React, {Component} from 'react';
 import Card from '../Card';
+import GameOver from '../GameOver';
 import './Form.css';
 //List of pokemons
 import pokemons from '../../pokemon.json';
@@ -12,6 +13,7 @@ const chance = new Chance();
 class Form extends Component {
   //Hold the pokemons and the pokemonsCatched
   state = {
+    status: true,
     pokemons,
     encounter: [],
     pokemonsCathed:[]
@@ -24,18 +26,23 @@ class Form extends Component {
   findPokemon = () =>{
     this.setState({ encounter: chance.pickset(this.state.pokemons, 3)});
   }
-  //
+  //eventHandler
   catchPokemon = e =>{
     e.preventDefault();
     if(this.state.pokemonsCathed.includes(e.target.id)){
+      console.log(this.state.status);
+      this.setState({ status : false});
       console.log("lost");
     }else{
       console.log(e.target.id);
       this.state.pokemonsCathed.push(e.target.id);
       this.props.updateCaughtCount();
       this.findPokemon();
-      // this.forceUpdate();
     }
+  }
+  //If you lost
+  gameStatus = () =>{
+    return this.state.status;
   }
   render(){
     return(
@@ -43,8 +50,8 @@ class Form extends Component {
         <div className="row">
           <div className="col s12">
             <ul>
-              {
-                this.state.encounter.map(pokemon => (
+              { this.gameStatus()
+                ? (this.state.encounter.map(pokemon => (
                   <Card
                     catchPokemon={this.catchPokemon}
                     key={pokemon.id}
@@ -52,7 +59,10 @@ class Form extends Component {
                     img={pokemon.img}
                     name={pokemon.name}
                   />
-                ))
+                )))
+                : (
+                  <GameOver/>
+                )
               }
             </ul>
           </div>
